@@ -1,11 +1,10 @@
-
 const SelectData = () => {
+
     return (
         <div className="col">
             <div className="form-floating">
-            <select className="form-select" name="SelectData" id="SelectData">
-            <option selected></option>
-            <option value="TWD">台幣</option>
+            <select defaultValue={'DEFAULT'} className="form-select" name="SelectData" id="SelectData">
+            <option value="DEFAULT" disabled>請選擇</option>
             <option value="JPY">日幣</option>
             <option value="USD">美金</option>
             <option value="HKD">港幣</option>
@@ -26,7 +25,7 @@ const SelectData = () => {
             <option value="MYR">馬來幣</option>
             <option value="CNY">人民幣</option>
         </select>
-        <label for="SelectData">兌換幣別</label>
+        <label htmlFor="SelectData">兌換幣別</label>
         </div>
     </div>
     );
