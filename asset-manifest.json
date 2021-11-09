@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/ReactForExchangeRate/static/css/main.2ef49afb.chunk.css",
-    "main.js": "/ReactForExchangeRate/static/js/main.16fcb956.chunk.js",
-    "main.js.map": "/ReactForExchangeRate/static/js/main.16fcb956.chunk.js.map",
+    "main.js": "/ReactForExchangeRate/static/js/main.ccd31583.chunk.js",
+    "main.js.map": "/ReactForExchangeRate/static/js/main.ccd31583.chunk.js.map",
     "runtime-main.js": "/ReactForExchangeRate/static/js/runtime-main.2e1dfeec.js",
     "runtime-main.js.map": "/ReactForExchangeRate/static/js/runtime-main.2e1dfeec.js.map",
-    "static/js/2.92e199c2.chunk.js": "/ReactForExchangeRate/static/js/2.92e199c2.chunk.js",
-    "static/js/2.92e199c2.chunk.js.map": "/ReactForExchangeRate/static/js/2.92e199c2.chunk.js.map",
+    "static/js/2.69a2c5f7.chunk.js": "/ReactForExchangeRate/static/js/2.69a2c5f7.chunk.js",
+    "static/js/2.69a2c5f7.chunk.js.map": "/ReactForExchangeRate/static/js/2.69a2c5f7.chunk.js.map",
     "index.html": "/ReactForExchangeRate/index.html",
     "static/css/main.2ef49afb.chunk.css.map": "/ReactForExchangeRate/static/css/main.2ef49afb.chunk.css.map",
-    "static/js/2.92e199c2.chunk.js.LICENSE.txt": "/ReactForExchangeRate/static/js/2.92e199c2.chunk.js.LICENSE.txt"
+    "static/js/2.69a2c5f7.chunk.js.LICENSE.txt": "/ReactForExchangeRate/static/js/2.69a2c5f7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2e1dfeec.js",
-    "static/js/2.92e199c2.chunk.js",
+    "static/js/2.69a2c5f7.chunk.js",
     "static/css/main.2ef49afb.chunk.css",
-    "static/js/main.16fcb956.chunk.js"
+    "static/js/main.ccd31583.chunk.js"
   ]
 }
