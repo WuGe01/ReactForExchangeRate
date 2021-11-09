@@ -5,7 +5,7 @@ import List from "./List";
 const Home = () => {
 
 const [data, setData] = useState([]);
-
+// console.log(data);
 return (
     <div className="FormBoby">
       <div className="container shadow p-4 m-4">

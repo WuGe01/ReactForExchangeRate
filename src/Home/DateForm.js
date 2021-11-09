@@ -1,45 +1,51 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 
 const DateForm = ({ add }) => {
 
-    const api = 'https://cors-anywhere.herokuapp.com/https://tw.rter.info/capi.php?=1568944322585';
-
-    useEffect(()=>{ 
-
-        fetch(api)
-        .then(res => res.json()) 
-        .then(data => {
-            console.log(333)
-            console.log(data)
-        })
-        .catch(e => {
-            console.log(111)
-            console.log(e)
-        })
-    });
-
+    const api = 'https://cors-anywhere.herokuapp.com/https://tw.rter.info/capi.php';
 
     const [amount, setAmount] = useState("");
     function amountChange(e) {
-      console.log(e.target.value);
       setAmount(e.target.value);
     } 
 
     const [select, setSelect] = useState("DEFAULT");
     function selectChange(e) {
-      console.log(e.target.value);
       setSelect(e.target.value);
     }; 
     
     const [result, setResult] = useState("");
 
-
-    function resultChange() {
-        
+    function resultChange() {       
         console.log("兌換");
-        console.log(amount);
-        console.log(select);
-        setResult(11);
+        if (amount === '') {
+         alert("請輸入台幣金額");
+         return true;
+        }
+        if (select === 'DEFAULT') {
+         alert("請輸入兌換幣別");
+         return true;
+        }
+        fetch(api)
+        .then(res => res.json()) 
+        .then(data => {
+            const money = amount/data['USDTWD']['Exrate'];
+            const toDollar = money*data[`USD${select}`]['Exrate'];
+            setResult(toDollar);
+            add(function (prevData) {
+                return [
+                  {
+                    amount,
+                    select,
+                    result: toDollar,
+                  },
+                  ...prevData,
+                ];
+            });
+        })
+        .catch(e => {
+            console.log(e)
+        })
     };
 
 
