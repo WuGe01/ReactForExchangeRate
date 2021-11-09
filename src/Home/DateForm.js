@@ -2,16 +2,11 @@ import { useState,useEffect } from "react";
 
 const DateForm = ({ add }) => {
 
-    const api = 'https://tw.rter.info/capi.php';
+    const api = 'https://cors-anywhere.herokuapp.com/https://tw.rter.info/capi.php?=1568944322585';
 
     useEffect(()=>{ 
-        fetch(api, {
-            // method: "GET",
-            headers: new Headers({
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-            })
-        }) /*設定使用GET*/
+
+        fetch(api)
         .then(res => res.json()) 
         .then(data => {
             console.log(333)
