@@ -1,4 +1,6 @@
 # 先前準備及構想 
+### 預覽
+https://wuge01.github.io/ReactForExchangeRate/
 ### 匯率抓取的API 
 https://tw.rter.info/capi.php
 ### 構想 
