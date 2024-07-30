@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const DateForm = ({ add }) => {
 
-    const api = 'https://cors-anywhere.herokuapp.com/https://tw.rter.info/capi.php';
+    const api = 'https://tw.rter.info/capi.php';
 
     const [amount, setAmount] = useState("");
     function amountChange(e) {
